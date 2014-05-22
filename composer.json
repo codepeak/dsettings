@@ -1,6 +1,8 @@
 {
     "name": "codepeak/dsettings",
-    "description": "",
+    "description": "Store custom settings in database and add cache layer for performance",
+    "keywords": ["laravel","illuminate","database","cache"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Robert Lord",
@@ -11,6 +13,10 @@
         "php": ">=5.3.0",
         "illuminate/support": "4.1.*"
     },
+    "require-dev": {
+        "mockery/mockery": "0.7.2",
+        "illuminate/database": "4.1.x"
+    },
     "autoload": {
         "classmap": [
             "src/migrations"
@@ -19,5 +25,5 @@
             "Codepeak\\Dsettings\\": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
